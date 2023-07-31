@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肥妮生日快樂</title>
+    <link rel="stylesheet" type="text/css" href="birthday.css">
+</head>
+<body>
+    <div class="background">
+        <img src="https://qianp.com/uploads/images/kind/20230512/20230512153633_33335.jpg" class="pc-menu"width="1900"height="860">
+        <img src="img.jpg" class="mobile-menu">
+        <div class="title">
+            <div class="item" onclick="changetotomeet()">相遇</div>
+            <div class="item" onclick="changetomeet()">見面</div>
+            <div class="item" onclick="changetolast()">最後</div>
+    </div>
+    <div class="word">
+        <div id="tomeet">在2019年時，︀偶然在路人隊伍裡遇到了一隻豬。
+            <br>叫做安妮妮，︀然後就跟這隻豬一起玩了。
+            <br>聊著聊著就越來越熟悉，︀並在8月7號舉行了婚禮。
+            <br>也許這就是緣分，︀讓我遇到了這隻屁孩豬。
+        </div>
+        <div id="meet" style="display: none;">到了2023年，︀我終於見到這隻豬了。
+                也許是第一次見面，︀都很陌生。去了很多地方，︀看了很多新事物。然後這隻豬還認為我不開心，︀都胡思亂想開始小劇場。最有印象的就是山頂，︀陪一個小孩豬玩大富翁，︀果然是小孩。總之這次旅行，︀是個美好的回憶。雖然可能話不多，︀但我相信下次會更好。
+            <br>
+        </div>
+        <div id="last" style="display: none">最後，︀四年了，︀祝妳這隻豬生日快樂，︀希望未來的每個生日都有我在。希望妳天天開心，︀我相信我們會越來越好的。
+        <br>I Love You Annie Pig.
+    </div>
+    </div>
+    <script>
+        function changetotomeet(){
+            let tomeetDiv=document.querySelector("#tomeet")
+            let meetDiv=document.querySelector("#meet")
+            let lastDiv=document.querySelector("#last")
+            tomeetDiv.style.display="block"
+            meetDiv.style.display="none"
+            lastDiv.style.display="none"
+        }
+        function changetomeet(){
+            let tomeetDiv=document.querySelector("#tomeet")
+            let meetDiv=document.querySelector("#meet")
+            let lastDiv=document.querySelector("#last")
+            tomeetDiv.style.display="none"
+            meetDiv.style.display="block"
+            lastDiv.style.display="none"
+        }
+        function changetolast(){
+            let tomeetDiv=document.querySelector("#tomeet")
+            let meetDiv=document.querySelector("#meet")
+            let lastDiv=document.querySelector("#last")
+            tomeetDiv.style.display="none"
+            meetDiv.style.display="none"
+            lastDiv.style.display="block"
+        }
+    </script>
+</body>
+</html>
